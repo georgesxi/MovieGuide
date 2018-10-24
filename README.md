@@ -9,10 +9,6 @@ A movie catalog that uses the TMDB API to retrieve popular movies, search for sp
 2) Insert your TMDB API key in the `gradle.properties` file in the field:
 `apiKey = "insert_your_api_key_here"`
 
-# MovieRama
-
-This is a movie catalog that uses the TMDB API as a source of data.
-
 # Features
 
 •	Users can check the list of the most popular movies using an infinite recycler view.
