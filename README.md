@@ -26,10 +26,12 @@ A movie catalog that uses the TMDB API to retrieve popular movies, search for sp
 # Gradle
 
 •	Target android SDK was set to 28 and minSDK was set to 23. 
+
 •	API key was included in the build file instead of hardcoding it in the app. 
 
 
 # Coding
+
 •	Whole project was written in Kotlin using most of the latest features.
 
 •	SharedPrefs are used for saving favorite movies
