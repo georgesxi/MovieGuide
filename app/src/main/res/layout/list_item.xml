@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    android:orientation="vertical"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingTop="15dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="4dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/movie_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/movie_title"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="placeholder for 1 line of text" />
+
+                <TextView
+                    android:id="@+id/rating_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movie_title"
+                    android:paddingStart="5dp"
+                    android:text="@string/rating"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/movie_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movie_title"
+                    android:layout_toRightOf="@id/rating_title"
+                    android:paddingLeft="5dp"
+                    android:textSize="16sp"
+                    tools:text="7.7" />
+
+                <TextView
+                    android:id="@+id/release_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movie_title"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/movie_rating"
+                    android:paddingStart="5dp"
+                    android:text="@string/release"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/movie_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movie_title"
+                    android:layout_toEndOf="@id/release_title"
+                    android:paddingStart="5dp"
+                    android:textSize="16sp"
+
+                    tools:text="Mar 6, 2010" />
+
+
+                <ToggleButton
+                    android:id="@+id/button_favorite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/button_favorite"
+                    android:checked="false"
+                    android:saveEnabled="false"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

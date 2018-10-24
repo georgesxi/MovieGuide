@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MovieGuide</string>
+
+    <!--Item List titles-->
+    <string name="release" translatable="true">Release</string>
+    <string name="rating" translatable="true">Rating</string>
+
+    <string name="description" translatable="false">poster</string>
+
+    <!--Details-->
+    <string name="overview" translatable="true">Overview</string>
+    <string name="director" translatable="true">Director</string>
+    <string name="cast" translatable="true">Cast</string>
+    <string name="movie_genre" translatable="true">Movie Genre</string>
+    <string name="similar_movies" translatable="true">Similar Movies</string>
+    <string name="reviews" translatable="true">Reviews</string>
+    <string name="preference_file_key" translatable="true">1</string>
+    <string name="No_reviews" translatable="true">"No reviews available"</string>
+    <string name="search_hint" translatable="true">"Search for movies..."</string>
+
+    <!--No Network-->
+    <string name="whoops" translatable="true">"Whoops!"</string>
+    <string name="network_text" translatable="true">"No internet connection found. Check your connection or click the refresh button to try again."</string>
+    <string name="network_image_description" translatable="true">"No internet connection found. Check your connection or try again."</string>
+
+</resources>
